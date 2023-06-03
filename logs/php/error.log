@@ -1,0 +1,67 @@
+[23-May-2023 21:22:52 UTC] PHP Parse error:  syntax error, unexpected 'add_filter' (T_STRING) in /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce-child/functions.php on line 13
+[23-May-2023 21:22:52 UTC] PHP Parse error:  syntax error, unexpected 'add_filter' (T_STRING) in /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce-child/functions.php on line 13
+[29-May-2023 11:37:40 UTC] PHP Fatal error:  Uncaught Error: Call to a member function have_posts() on null in /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce-child/template-parts/section-slider.php:19
+Stack trace:
+#0 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/template.php(785): require()
+#1 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/template.php(718): load_template('/Users/jennifer...', false, Array)
+#2 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce-child/front-page.php(40): get_template_part('template-parts/...')
+#4 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/template-loader.php(106): include('/Users/jennifer...')
+#5 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-blog-header.php(19): require_once('/Users/jennifer...')
+#6 /Users/jenniferbouhid/Local Sites/koukaki/app/public/index.php(17): in /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce-child/template-parts/section-slider.php on line 19
+[29-May-2023 11:38:37 UTC] PHP Fatal error:  Uncaught Error: Call to a member function have_posts() on null in /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce-child/template-parts/section-slider.php:5
+Stack trace:
+#0 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/template.php(785): require()
+#1 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/template.php(718): load_template('/Users/jennifer...', false, Array)
+#2 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce-child/front-page.php(40): get_template_part('template-parts/...')
+#4 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/template-loader.php(106): include('/Users/jennifer...')
+#5 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-blog-header.php(19): require_once('/Users/jennifer...')
+#6 /Users/jenniferbouhid/Local Sites/koukaki/app/public/index.php(17):  in /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce-child/template-parts/section-slider.php on line 5
+[29-May-2023 11:40:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function next_post() on null in /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce-child/template-parts/section-slider.php:9
+Stack trace:
+#0 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/template.php(785): require()
+#1 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/template.php(718): load_template('/Users/jennifer...', false, Array)
+#2 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce-child/front-page.php(40): get_template_part('template-parts/...')
+#4 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/template-loader.php(106): include('/Users/jennifer...')
+#5 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-blog-header.php(19): require_once('/Users/jennifer...')
+#6 /Users/jenniferbouhid/Local Sites/koukaki/app/public/index.php(17): r in /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce-child/template-parts/section-slider.php on line 9
+[29-May-2023 11:42:22 UTC] PHP Fatal error:  Uncaught Error: Call to a member function next_post() on null in /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce-child/template-parts/section-slider.php:10
+Stack trace:
+#0 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/template.php(785): require()
+#1 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/template.php(718): load_template('/Users/jennifer...', false, Array)
+#2 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce-child/front-page.php(40): get_template_part('template-parts/...')
+#4 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/template-loader.php(106): include('/Users/jennifer...')
+#5 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-blog-header.php(19): require_once('/Users/jennifer...')
+#6 /Users/jenniferbouhid/Local Sites/koukaki/app/public/index.php(17):  in /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce-child/template-parts/section-slider.php on line 10
+[29-May-2023 11:42:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function next_post() on null in /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce-child/template-parts/section-slider.php:10
+Stack trace:
+#0 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/template.php(785): require()
+#1 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/template.php(718): load_template('/Users/jennifer...', false, Array)
+#2 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce-child/front-page.php(40): get_template_part('template-parts/...')
+#4 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/template-loader.php(106): include('/Users/jennifer...')
+#5 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-blog-header.php(19): require_once('/Users/jennifer...')
+#6 /Users/jenniferbouhid/Local Sites/koukaki/app/public/index.php(17):  in /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce-child/template-parts/section-slider.php on line 10
+[29-May-2023 13:45:07 UTC] PHP Parse error:  syntax error, unexpected '$main_character' (T_VARIABLE) in /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce-child/template-parts/section-slider.php on line 17
+[29-May-2023 13:46:27 UTC] PHP Parse error:  syntax error, unexpected '$main_character' (T_VARIABLE) in /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce-child/template-parts/section-slider.php on line 17
+[29-May-2023 18:46:40 UTC] PHP Fatal error:  Uncaught Error: Cannot use object of type WP_Post as array in /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce-child/template-parts/section-slider.php:18
+Stack trace:
+#0 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/template.php(785): require()
+#1 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/template.php(718): load_template('/Users/jennifer...', false, Array)
+#2 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#3 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce-child/front-page.php(27): get_template_part('template-parts/...')
+#4 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/template-loader.php(106): include('/Users/jennifer...')
+#5 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-blog-header.php(19): require_once('/Users/jennifer...')
+#6 /Users/jenniferbouhid/Local Sites/koukaki/app/public/index.php(17): req in /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce-child/template-parts/section-slider.php on line 18
+[30-May-2023 20:53:12 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce-child/template-parts/section-slider.php on line 17
+[02-Jun-2023 20:36:38 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function wp_register_script(), 1 passed in /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce/functions.php on line 145 and at least 2 expected in /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/functions.wp-scripts.php:173
+Stack trace:
+#0 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-content/themes/foce/functions.php(145): wp_register_script('foce-navigation')
+#1 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/class-wp-hook.php(308): foce_scripts('')
+#2 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#3 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#4 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/script-loader.php(2194): do_action('wp_enqueue_scri...')
+#5 /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/class-wp-hook.php in /Users/jenniferbouhid/Local Sites/koukaki/app/public/wp-includes/functions.wp-scripts.php on line 173
