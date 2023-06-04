@@ -1,7 +1,6 @@
 window.addEventListener('load', (event) => {
 
 const siteNavigation = document.getElementById('navigation');
-console.log(siteNavigation);
 var burger = document.querySelector('.header_nav_bar_burger');
 const button = siteNavigation.getElementsByTagName( 'button' )[0];
 const cross = document.querySelector('.header_nav_bar_cross');

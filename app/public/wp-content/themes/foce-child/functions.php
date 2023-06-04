@@ -3,10 +3,12 @@ add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 function theme_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/style.css', array(), filemtime(get_stylesheet_directory() . '/style.css'));
-    wp_enqueue_script( 'animation-script', get_stylesheet_directory_uri() . '/animation.js');
+    /** Script JS */
+    wp_enqueue_script( 'animation-script', get_stylesheet_directory_uri() . '/js/animation.js');
+    wp_enqueue_script( 'swiper-script', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js');
+    wp_enqueue_script( 'slider-swiper-script', get_stylesheet_directory_uri() . '/js/slider-swiper.js');
+    wp_enqueue_script( 'navigation-script', get_stylesheet_directory_uri() . '/js/navigation-bar.js');
     //wp_deregister_script('foce-navigation');
-    wp_enqueue_script( 'navigation-script', get_stylesheet_directory_uri() . '/navigation-bar.js');
-    wp_enqueue_script( 'swiper-script', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js');
     
     // Déclarer jQuery
      //wp_deregister_script( 'jquery' ); // On annule l'inscription du jQuery de WP

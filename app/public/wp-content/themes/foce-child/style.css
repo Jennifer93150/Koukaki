@@ -279,22 +279,38 @@ Section histoire
 /****************************************************************************************************
                                       SWIPER
 ******************************************************************************************************/
-swiper-container {
+.swiper {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-swiper-slide {
+.story #characters div {
+  flex: 1;
+  flex-direction: row;
+  display: flex;
+}
+
+.swiper-slide {
   background-position: center;
   background-size: cover;
   width: 300px;
   height: 300px;
 }
 
-swiper-slide img {
+.swiper-slide img {
   display: block;
   width: 100%;
+}
+
+.story #characters div.main-character {
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+}
+
+.story #characters div#swiper-wrapper-4c7d1100ad99bfe3d {
+  transform: none;
 }
 
 /************************************************************************************************
