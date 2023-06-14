@@ -11,8 +11,9 @@ $characters_query = new WP_Query($args);
 
 <article id="characters">
     <div class="main-character">
-        <h3 class="story__title">Les personnages</h3>
+        
         <div class="swiper mySwiper">
+                <h3 class="story__title">Les personnages</h3>
             <div class="swiper-wrapper" id="swiper-wrapper">
                 <?php
 
@@ -26,8 +27,16 @@ $characters_query = new WP_Query($args);
                     echo '</div>';
                 }
                 ?>
+                <?php
+                $main_character = $characters_query->posts[2];
+                echo '<div class="swiper-slide">';
+                echo get_the_post_thumbnail($main_character->ID, 'full');
+                echo '<figcaption>' . $main_character->post_title . '</figcaption>';
+                echo '</div>';
+                $characters_query->next_post();
+                ?>
             </div>
-            <div class="swiper-pagination"></div>
+            <div></div>
         </div>
     </div>
 </article>

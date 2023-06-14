@@ -1,0 +1,21 @@
+@import '../utils/animation';
+
+/* RETRAIT DES FLEURS DU FOOTER */
+.site-footer::before,
+.site-footer::after {
+    content: none;
+}
+
+/****************************************************************************************************
+                                    BREAKPOINTS
+******************************************************************************************************/
+
+@media screen and (max-width: 920px) {
+    .site-footer {
+        padding-top: 5em;
+    }
+
+    .site-footer ul::after {
+        content: "";
+    }
+}

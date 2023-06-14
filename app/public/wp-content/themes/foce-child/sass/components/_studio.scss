@@ -1,0 +1,128 @@
+@import '../utils/animation';
+
+#studio {
+    position: relative;
+    margin-top: 3em;
+
+    &>div::before {
+        content: "";
+    }
+
+    &>div:not(.studio__text) {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* CONTENEUR TITRE */
+    &>.studio__div {
+        justify-content: center;
+        background-image: url(./assets/images/purple_title_bg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        background-color: #FFF5E9;
+        height: 230px;
+
+        /* FLEUR VIOLETTE GAUCHE */
+        &::before {
+            content: url(./assets/images/random_flower.png);
+            position: absolute;
+            left: -6em;
+            top: 0;
+        }
+
+        /* FLEUR ORANGE DROITE */
+        &::after {
+            content: url(./assets/images/flower.png);
+            position: absolute;
+            right: 1em;
+            top: 1.2em;
+        }
+
+        & div {
+            overflow: hidden;
+            height: 58%;
+
+            /* TITRE */
+            & .studio__div__title {
+                display: flex;
+                justify-content: center;
+                background: none;
+
+                /* SUPPRESSION ANCIENNE FLEURS */
+                &::before,
+                &::after {
+                    content: "";
+                }
+
+                /* MOT STUDIO */
+                &-first {
+                    display: block;
+                    margin: 0 5px;
+                    transform: translateY(100%);
+
+                    /* ANIMATION TITRE */
+                    &.active {
+                        animation: appear-title 800ms both ease-in;
+                    }
+                }
+
+                /* MOT KOUKAKI */
+                &-second {
+                    display: block;
+                    margin: 0 5px;
+                    transform: translateY(100%);
+
+                    /* ANIMATION TITRE */
+                    &.active {
+                        animation: appear-title 800ms both ease-in;
+                        animation-delay: 100ms;
+                    }
+                }
+            }
+        }
+    }
+
+    /* CONTENEUR TEXTE */
+    &>.studio__sheet {
+        &::before {
+            content: url(./assets/images/trple-leaf.png);
+            position: absolute;
+            left: calc(50% - 17.225px);
+            top: 40%;
+        }
+    }
+}
+
+/***********************************************************************************************
+                                    BREAKPOINTS
+***********************************************************************************************/
+@media (max-width: 920px) {
+    #studio>.studio__div div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #studio>.studio__div::before,
+    #studio>.studio__div::after,
+    #studio>.studio__sheet::before {
+        content: "";
+    }
+}
+
+@media (max-width: 768px) {
+    #studio>.studio__div div .studio__div__title {
+        font-size: 3rem;
+    }
+
+    #studio>.studio__div div .studio__div__title-first,
+    #studio>.studio__div div .studio__div__title-second {
+        transform: translateY(132%);
+    }
+
+    #studio>.studio__div div .studio__div__title-first.active,
+    #studio>.studio__div div .studio__div__title-second.active {
+        animation-duration: 400ms;
+    }
+}

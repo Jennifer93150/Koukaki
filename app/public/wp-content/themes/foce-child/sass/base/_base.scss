@@ -1,0 +1,50 @@
+@import '../utils/animation';
+
+*, ::before, ::after{
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* MASQUE LES FLEURS QUI DEPASSENT */
+.site{
+  overflow: hidden;
+}
+
+/* ANIMATION SECTIONS */
+section:not(.banner), #colophon ul{
+  animation-name: fade-in-section;
+  animation-duration: 1200ms;
+  animation-timing-function: ease-out;
+}
+
+/* ANIMATION TEXTES */
+p{
+  animation-name: fade-in-text ;
+  animation-duration: 1200ms;
+  animation-timing-function: ease-out; 
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+}
+

@@ -41,12 +41,12 @@
                 <div class="header_nav_menu">
                     <img class="header_nav_menu_img" src="<?php echo get_stylesheet_directory_uri() . '/assets/images/Image logo en paralax.png'; ?>" alt="logo">
                     <ul>
-                        <li class="header_nav_menu_list_item_story"><a href="#story">Histoire</a></li>
-                        <li class="header_nav_menu_list_item_characters"><a href="#characters">Personnages</a></li>
-                        <li class="header_nav_menu_list_item_place"><a href="#place">Lieu</a></li>
-                        <li class="header_nav_menu_list_item_studio"><a href="#studio">Studio Koukaki</a></li>
+                        <li class="header_nav_menu_list_item_story"><a href="#story" class="header_nav_menu_list_item_link">Histoire</a></li>
+                        <li class="header_nav_menu_list_item_characters"><a href="#characters" class="header_nav_menu_list_item_link">Personnages</a></li>
+                        <li class="header_nav_menu_list_item_place"><a href="#place" class="header_nav_menu_list_item_link">Lieu</a></li>
+                        <li class="header_nav_menu_list_item_studio"><a href="#studio" class="header_nav_menu_list_item_link">Studio Koukaki</a></li>
                     </ul>
                     <p class="header_nav_menu_studio-koukaki">Studio koukaki</p>
                 </div>
-            </nav>
-        </header>
+            </nav><!-- #navigation -->
+        </header><!-- #masthead -->

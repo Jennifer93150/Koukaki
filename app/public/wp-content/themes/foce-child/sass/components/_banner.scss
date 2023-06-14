@@ -1,0 +1,62 @@
+@import '../utils/animation';
+
+.banner {
+    /*retrait de l'image theme parent*/
+    background-image: none;
+    display: block;
+    min-height: initial;
+    position: relative;
+    padding-bottom: 56%;
+    height: 0;
+
+    video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    video,
+    .banner__img-mobile {
+        /* ANIMATION VIDEO */
+        animation-name: banner;
+        animation-duration: 2s;
+    }
+
+    img {
+        margin-top: 0;
+        width: auto;
+    }
+
+    &__img-mobile {
+        display: none;
+    }
+
+}
+
+#banner__title {
+    margin-top: -10%;
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    /* ANIMATION LOGO */
+    animation: logo 1500ms,
+        floating-logo 3500ms ease-in-out 1500ms infinite,
+        floating-rotate 3500ms ease-in-out 1500ms infinite;
+}
+
+/****************************************************************************************************
+                                    BREAKPOINTS
+******************************************************************************************************/
+
+@media screen and (max-width: 425px) {
+    video {
+      display: none;
+    }
+  
+    .banner__img-mobile {
+      display: block;
+    }
+}

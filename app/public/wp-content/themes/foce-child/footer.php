@@ -10,15 +10,12 @@
  */
 
 ?>
-
-	<footer id="colophon" class="site-footer">
-    
-        <ul>
+	<footer id="colophon" class="site-footer fast-rotation-flower">
+        <ul class="fast-rotation-flower">
             <li><a href="#">Mentions Légales</a></li>
             <li><a href="#">STUDIO KOUKAKI</a></li>
             <li><a href="#">Contact</a></li>
-        </ul>
-        
+        </ul>  
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

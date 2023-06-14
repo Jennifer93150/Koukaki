@@ -1,0 +1,155 @@
+/********************
+ANIMATIONS
+********************/
+
+@keyframes opening-menu {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes closing-menu {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+@keyframes floating {
+    0% {
+        margin-top: 1em;
+    }
+
+    25% {
+        margin-top: 0%;
+    }
+
+    50% {
+        margin-top: 2em;
+    }
+
+    75% {
+        margin-top: 3em;
+    }
+
+    100% {
+        margin-top: 1em;
+    }
+}
+
+@keyframes floating-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(3deg);
+    }
+
+    75% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes floating-logo {
+   
+    25% {
+        top: 26%;
+    }
+
+    50% {
+        top: 30%;
+    }
+
+    75% {
+        top: 27%;
+    }
+
+    100% {
+        top: 30%;
+    }
+}
+
+@keyframes shift-cloud {
+    to {
+        transform: translateX(-500px);
+    }
+}
+
+@keyframes rotation-flower {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes appear-title {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes banner {
+    0% {
+        opacity: 0;
+        transform: translateY(-10vh);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes logo{
+    0%{
+        opacity: 0;
+        transform: translateY(10vh);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-section{
+    0%{
+        opacity: 0;
+        transform: translateY(20vh);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in-text{
+    0%{
+        opacity: 0;
+        transform: translateY(-20vh);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,80 @@
+@import '../utils/animation';
+
+.story {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* FOND VIOLET TITRE */
+  &__div {
+    background-image: url(./assets/images/purple_title_bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #FFF5E9;
+    height: 230px;
+
+    & div {
+      overflow: hidden;
+      height: 58%;
+    }
+  }
+
+  &__div::before {
+    content: url(./assets/images/sunflower_leaves.png);
+    position: absolute;
+    top: 115px;
+    left: 45px;
+    z-index: -1;
+  }
+
+  &__div::after {
+    content: url(./assets/images/Sunflower.png);
+    position: absolute;
+    top: 375px;
+    left: 88px;
+  }
+
+  h2.story__title {
+    background: none;
+    transform: translateY(50%);
+
+    &::before,
+    &::after {
+      content: " ";
+    }
+
+    &.active {
+      //animation: fade-in 1s both;
+      animation: appear-title 1s both;
+    }
+  }
+}
+
+/****************************************************************************************************
+                                    BREAKPOINTS
+******************************************************************************************************/
+
+@media (max-width: 1040px) {
+  .story__div::before {
+    left: 25px;
+  }
+  .story__div::after {
+    left: 69px;
+  }
+}
+
+@media (max-width: 920px) {
+  .story__div::before,
+  .story__div::after {
+    content: "";
+  }
+}
+
+@media (max-width: 768px) {
+  h2.story__title {
+    font-size: 3rem;
+    padding: 2em;
+  }
+}

@@ -1,0 +1,27 @@
+/* ROTATION DES FLEURS */
+.story__div::after,
+.story__article::after,
+#studio > .studio__div::before ,
+#studio > .studio__div::after,
+#oscars::before, 
+#oscars::after,
+#colophon::before,
+#colophon ul::after,
+#colophon::after {
+  animation-name: rotation-flower;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.story__div.fast-rotation-flower.active::after,
+.story__article.fast-rotation-flower.active::after,
+#studio > .studio__div.fast-rotation-flower.active::before ,
+#studio > .studio__div.fast-rotation-flower.active::after,
+#oscars.fast-rotation-flower.active::before, 
+#oscars.fast-rotation-flower.active::after,
+#colophon.fast-rotation-flower.active::before,
+#colophon ul.fast-rotation-flower.active::after,
+#colophon.fast-rotation-flower.active::after {
+  animation-duration: calc(var(--scroll) * 5s);
+}

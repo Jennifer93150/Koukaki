@@ -5,21 +5,12 @@ function theme_enqueue_styles() {
     wp_enqueue_style('child-style', get_stylesheet_directory_uri() . '/style.css', array(), filemtime(get_stylesheet_directory() . '/style.css'));
     /** Script JS */
     wp_enqueue_script( 'animation-script', get_stylesheet_directory_uri() . '/js/animation.js');
-    wp_enqueue_script( 'swiper-script', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js');
-    wp_enqueue_script( 'slider-swiper-script', get_stylesheet_directory_uri() . '/js/slider-swiper.js');
     wp_enqueue_script( 'navigation-script', get_stylesheet_directory_uri() . '/js/navigation-bar.js');
-    //wp_deregister_script('foce-navigation');
+    /** SWIPER */
+    wp_enqueue_style( 'swiperjs-style', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css' );
+    wp_enqueue_script( 'swiperjs-script', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js', array(), _S_VERSION, true );
+    wp_enqueue_script( 'slider-swiper-script', get_stylesheet_directory_uri() . '/js/slider-swiper.js', array(), null, true );
     
-    // Déclarer jQuery
-     //wp_deregister_script( 'jquery' ); // On annule l'inscription du jQuery de WP
-    // wp_enqueue_script( // On déclare une version plus moderne
-    //     'jquery', 
-    //     'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', 
-    //     false, 
-    //     '3.3.1', 
-    //     true 
-    // );
- 
 }
 
 // Get customizer options form parent theme

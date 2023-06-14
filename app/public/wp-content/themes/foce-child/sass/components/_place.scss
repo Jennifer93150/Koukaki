@@ -1,0 +1,74 @@
+@import '../utils/animation';
+
+.story #place {
+    // background: none;
+    background-image: url(./assets/images/Background_place.png);
+    position: relative;
+    /* DIV TEXTE sf div bg */
+    &>div {
+        position: absolute;
+        top: 13em;
+        left: 2em;
+    }
+
+    /* TITRE "LIEU" */
+    & h3 {
+        margin-bottom: 15px;
+        z-index: 2;
+    }
+
+    /* NUAGES */
+    & .place_cloud {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        /* floutage nuage */
+        filter: blur(1rem);
+    }
+
+    &.active .place_cloud {
+        /* Animation des nuages */
+        animation-name: shift-cloud;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        animation-fill-mode: both;
+        /* Déplacement et arret en meme temps que le scroll*/
+        // animation-iteration-count: infinite;
+        // animation-play-state: paused;
+        // animation-delay: calc(var(--scroll) * -1s);
+        // animation-iteration-count: 1;
+    }
+
+    /* PETIT NUAGE */
+    & div .place_little-cloud {
+        background-image: url(./assets/images/little_cloud.png);
+        width: 142px;
+        height: 55px;
+        top: 4em;
+        left: 51em;
+    }
+
+    /* GROS NUAGE */
+    & div .place_big-cloud {
+        background-image: url(./assets/images/big_cloud.png);
+        width: 316px;
+        height: 122px;
+        top: -8em;
+        left: 66em;
+    }
+}
+
+@media (max-width: 920px) {
+    .story #place div .place_cloud {
+        background: none;
+    }
+}
+@media (max-width: 425px){
+    .story #place h3{
+        padding-left: 1em;
+    }
+    .story #place > div p {
+        padding-left: 2em;
+    }
+}

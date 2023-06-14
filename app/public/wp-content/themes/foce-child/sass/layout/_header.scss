@@ -1,0 +1,252 @@
+@import "../utils/_animation";
+
+
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    max-width: 1440px;
+    width: 100%;
+
+    &_nav {
+        height: 80px;
+
+        &_bar {
+            position: absolute;
+            height: 80px;
+            left: 0px;
+            top: 0px;
+            background: #FFD5A2;
+            z-index: 9;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            &_title {
+                font-family: 'Quicksand';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 21.4799px;
+                text-shadow: none;
+                letter-spacing: -0.02em;
+            }
+
+            /* croix */
+            &_cross {
+                display: none;
+            }
+
+            /* burger */
+            &_burger {
+                width: 20px;
+                border: 0;
+                background-color: transparent;
+            }
+        }
+
+        /* ligne burger */
+        & .header_nav_bar_burger_line {
+            height: 3px;
+            background-color: #000;
+            display: block;
+            margin: auto;
+            margin-block: 2px;
+            width: 20px;
+        }
+
+        &_menu {
+            display: none;
+            background: #FFF5E9;
+            text-align: center;
+            overflow: hidden;
+            position: absolute;
+            width: 100%;
+            z-index: 2;
+
+            /* lien menu */
+            &_list_item_story,
+            &_list_item_place,
+            &_list_item_characters,
+            &_list_item_studio {
+                position: relative;
+                line-height: 84px;
+
+                a {
+                    font-size: 64px;
+                }
+
+            }
+
+            &_list_item_link:hover {
+                text-shadow: 0px 0px 14px #FF5C00;
+            }
+
+            /************************
+            fleurs & chats
+            *************************/
+            /* FLEUR VIOLETTE */
+            &::before {
+                content: url(./assets/images/orchid.png);
+                position: absolute;
+                left: -5%;
+                top: 16%;
+            }
+
+            /* FLEUR ORANGE */
+            // &::after {
+            //     content: url(./assets/images/hibiscus_footer.png);
+            //     position: absolute;
+            //     right: -23%;
+            //     bottom: -32%;
+            // }
+
+            /* chat violet */
+            &_list_item_story::before {
+                content: url(./assets/images/cat.png);
+                position: absolute;
+                top: -45%;
+                left: 17%;
+            }
+
+            /* tournesol */
+            &_list_item_story::after {
+                content: url(./assets/images/Sunflower.png);
+                position: absolute;
+                top: -70%;
+                right: 25%;
+                height: 160px;
+                display: flex;
+                justify-content: center;
+            }
+
+            /* fleur orange */
+            &_list_item_place::before {
+                content: url(./assets/images/flower-little.png);
+                position: absolute;
+                left: 14%;
+                height: 70px;
+                display: flex;
+                justify-content: center;
+            }
+
+            /* chat noir */
+            &_list_item_place::after {
+                content: url(./assets/images/cat\ \(2\).png);
+                position: absolute;
+                top: -57%;
+                right: 14%;
+            }
+
+            /* fleur ROSE */
+            &_list_item_characters::after {
+                display: block;
+                content: url(./assets/images/random_flower-ConvertImage.png);
+                position: absolute;
+                top: 40%;
+                right: -3%;
+                height: 70px;
+                display: flex;
+                justify-content: center;
+            }
+
+            /* chat roux */
+            &_list_item_studio::before {
+                content: url(./assets/images/cat\ \(1\).png);
+                position: absolute;
+                top: 56%;
+                left: 5%;
+            }
+
+            /* KOUKAKI bas de menu */
+            &_studio-koukaki {
+                text-transform: uppercase;
+                width: 100%;
+                margin: 50px 0;
+                position: absolute;
+                bottom: 0;
+
+                &::after {
+                    content: url(./assets/images/hibiscus_footer.png);
+                    position: absolute;
+                    top: -18em;
+                    right: -23em;
+                }
+            }
+
+            /********************
+            ATTRIBUTION ANIMATION
+            ********************/
+            &::before,
+            &_studio-koukaki::after,
+            &_list_item_story::after,
+            &_list_item_place::before,
+            &_list_item_characters::after {
+                animation: 20s rotation-flower infinite linear;
+            }
+
+            &_list_item_story::before,
+            &_list_item_place::after,
+            &_list_item_studio::before {
+                animation: floating 3s ease-in-out infinite,
+                    floating-rotate 3s ease-in-out infinite;
+            }
+        }
+
+        &.toggled .header_nav_menu {
+            display: block;
+            animation: opening-menu 1500ms both;
+            position: absolute;
+            height: 100vh;
+        }
+
+        &.closed .header_nav_menu {
+            display: block;
+            animation: closing-menu 1500ms both;
+        }
+
+        &_menu_img {
+            margin-top: 100px;
+        }
+    }
+}
+
+/****************************************************************************************************
+                                    BREAKPOINTS
+******************************************************************************************************/
+
+@media screen and (max-width: 992px) {
+    .header_nav_menu {
+
+        &::before,
+        &_studio-koukaki::after,
+        &_list_item_story::before,
+        &_list_item_story::after,
+        &_list_item_place::before,
+        &_list_item_place::after,
+        &_list_item_studio::before,
+        &_list_item_characters::after {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .header_nav_menu_list_item_story a,
+    .header_nav_menu_list_item_place a,
+    .header_nav_menu_list_item_characters a,
+    .header_nav_menu_list_item_studio a {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .header_nav_bar_title {
+        font-size: 15px;
+    }
+
+    .header_nav_bar_burger {
+        overflow: hidden;
+    }
+}
