@@ -36,7 +36,7 @@
     left: 88px;
   }
 
-  h2.story__title {
+  h2.story__div__title {
     background: none;
     transform: translateY(50%);
 
@@ -46,7 +46,6 @@
     }
 
     &.active {
-      //animation: fade-in 1s both;
       animation: appear-title 1s both;
     }
   }
@@ -73,7 +72,7 @@
 }
 
 @media (max-width: 768px) {
-  h2.story__title {
+  h2.story__div__title {
     font-size: 3rem;
     padding: 2em;
   }

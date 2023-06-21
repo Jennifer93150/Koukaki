@@ -15,11 +15,6 @@ body {
   min-height: 100vh;
 }
 
-/* MASQUE LES FLEURS QUI DEPASSENT */
-.site{
-  overflow: hidden;
-}
-
 /* ANIMATION SECTIONS */
 section:not(.banner), #colophon ul{
   animation-name: fade-in-section;

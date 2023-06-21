@@ -1,0 +1,78 @@
+.story #characters{
+    & .characters_div {
+        background-image: url(./assets/images/orange_characters_bg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left;
+        margin-left: 80px;
+        height: 185px;
+        z-index: 99;
+    
+        & > div {
+            overflow: hidden;
+            height: 65%;
+    
+            /* TITRE "LIEU" */
+            & h3.characters_div_title {
+                background: none;
+                margin-bottom: 15px;
+                text-align: left;
+                padding: 1.5em 2em;
+                z-index: 2;
+                transform: translateY(50%);
+    
+                &.active {
+                    animation: appear-title 1s both;
+                }
+            }
+        }
+    }
+}
+
+/***********************************************************************************************
+                                    BREAKPOINTS
+***********************************************************************************************/
+@media (max-width: 1192px) {
+    .story #characters .characters_div {
+        height: 160px;
+
+        /* TITRE "LIEU" */
+        & div h3.characters_div_title {
+            padding: 1.5em 2.5em;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .story #characters .characters_div {
+        background-position: center;
+        margin-left: 0;
+
+        /* TITRE "LIEU" */
+        & div h3.characters_div_title {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .story #characters .characters_div {
+        height: 130px;
+
+        /* TITRE "LIEU" */
+        & div h3.characters_div_title {
+            font-size: 1.9rem
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .story #characters .characters_div {
+        height: 95px;
+
+        /* TITRE "LIEU" */
+        & div h3.characters_div_title {
+            font-size: 1.5rem
+        }
+    }
+}

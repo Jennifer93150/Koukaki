@@ -38,29 +38,19 @@ ANIMATIONS
 @keyframes floating-rotate {
   0% {
     transform: rotate(0deg);
+    margin-top: -10%;
   }
   50% {
     transform: rotate(3deg);
+    margin-top: -7%;
   }
   75% {
-    transform: rotate(-2deg);
+    transform: rotate(-1deg);
+    margin-top: -9%;
   }
   100% {
     transform: rotate(0deg);
-  }
-}
-@keyframes floating-logo {
-  25% {
-    top: 26%;
-  }
-  50% {
-    top: 30%;
-  }
-  75% {
-    top: 27%;
-  }
-  100% {
-    top: 30%;
+    margin-top: -10%;
   }
 }
 @keyframes shift-cloud {
@@ -105,6 +95,7 @@ ANIMATIONS
     transform: translateY(10vh);
   }
   100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }
@@ -139,11 +130,6 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-}
-
-/* MASQUE LES FLEURS QUI DEPASSENT */
-.site {
-  overflow: hidden;
 }
 
 /* ANIMATION SECTIONS */
@@ -213,29 +199,19 @@ ANIMATIONS
 @keyframes floating-rotate {
   0% {
     transform: rotate(0deg);
+    margin-top: -10%;
   }
   50% {
     transform: rotate(3deg);
+    margin-top: -7%;
   }
   75% {
-    transform: rotate(-2deg);
+    transform: rotate(-1deg);
+    margin-top: -9%;
   }
   100% {
     transform: rotate(0deg);
-  }
-}
-@keyframes floating-logo {
-  25% {
-    top: 26%;
-  }
-  50% {
-    top: 30%;
-  }
-  75% {
-    top: 27%;
-  }
-  100% {
-    top: 30%;
+    margin-top: -10%;
   }
 }
 @keyframes shift-cloud {
@@ -280,6 +256,7 @@ ANIMATIONS
     transform: translateY(10vh);
   }
   100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }
@@ -340,29 +317,19 @@ ANIMATIONS
 @keyframes floating-rotate {
   0% {
     transform: rotate(0deg);
+    margin-top: -10%;
   }
   50% {
     transform: rotate(3deg);
+    margin-top: -7%;
   }
   75% {
-    transform: rotate(-2deg);
+    transform: rotate(-1deg);
+    margin-top: -9%;
   }
   100% {
     transform: rotate(0deg);
-  }
-}
-@keyframes floating-logo {
-  25% {
-    top: 26%;
-  }
-  50% {
-    top: 30%;
-  }
-  75% {
-    top: 27%;
-  }
-  100% {
-    top: 30%;
+    margin-top: -10%;
   }
 }
 @keyframes shift-cloud {
@@ -407,6 +374,7 @@ ANIMATIONS
     transform: translateY(10vh);
   }
   100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }
@@ -438,6 +406,7 @@ ANIMATIONS
 .header_nav {
   height: 80px;
   /* ligne burger */
+  /* MENU OUVERT */
 }
 .header_nav_bar {
   position: absolute;
@@ -445,7 +414,7 @@ ANIMATIONS
   left: 0px;
   top: 0px;
   background: #FFD5A2;
-  z-index: 9;
+  z-index: 99;
   width: 100%;
   display: flex;
   align-items: center;
@@ -490,7 +459,6 @@ ANIMATIONS
   fleurs & chats
   *************************/
   /* FLEUR VIOLETTE */
-  /* FLEUR ORANGE */
   /* chat violet */
   /* tournesol */
   /* fleur orange */
@@ -504,10 +472,10 @@ ANIMATIONS
 }
 .header_nav_menu_list_item_story, .header_nav_menu_list_item_place, .header_nav_menu_list_item_characters, .header_nav_menu_list_item_studio {
   position: relative;
-  line-height: 84px;
+  line-height: 75px;
 }
 .header_nav_menu_list_item_story a, .header_nav_menu_list_item_place a, .header_nav_menu_list_item_characters a, .header_nav_menu_list_item_studio a {
-  font-size: 64px;
+  font-size: 3.5em;
 }
 .header_nav_menu_list_item_link:hover {
   text-shadow: 0px 0px 14px #FF5C00;
@@ -527,7 +495,7 @@ ANIMATIONS
 .header_nav_menu_list_item_story::after {
   content: url(./assets/images/Sunflower.png);
   position: absolute;
-  top: -70%;
+  top: -100%;
   right: 25%;
   height: 160px;
   display: flex;
@@ -551,7 +519,7 @@ ANIMATIONS
   display: block;
   content: url(./assets/images/random_flower-ConvertImage.png);
   position: absolute;
-  top: 40%;
+  top: 0;
   right: -3%;
   height: 70px;
   display: flex;
@@ -560,21 +528,22 @@ ANIMATIONS
 .header_nav_menu_list_item_studio::before {
   content: url(./assets/images/cat\ \(1\).png);
   position: absolute;
-  top: 56%;
+  top: 190%;
   left: 5%;
 }
 .header_nav_menu_studio-koukaki {
   text-transform: uppercase;
   width: 100%;
-  margin: 50px 0;
-  position: absolute;
+  margin-top: 90px;
+  position: fixed;
   bottom: 0;
 }
 .header_nav_menu_studio-koukaki::after {
   content: url(./assets/images/hibiscus_footer.png);
   position: absolute;
-  top: -18em;
+  bottom: -26em;
   right: -23em;
+  zoom: 50%;
 }
 .header_nav_menu::before, .header_nav_menu_studio-koukaki::after, .header_nav_menu_list_item_story::after, .header_nav_menu_list_item_place::before, .header_nav_menu_list_item_characters::after {
   animation: 20s rotation-flower infinite linear;
@@ -587,6 +556,10 @@ ANIMATIONS
   animation: opening-menu 1500ms both;
   position: absolute;
   height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .header_nav.closed .header_nav_menu {
   display: block;
@@ -659,29 +632,19 @@ ANIMATIONS
 @keyframes floating-rotate {
   0% {
     transform: rotate(0deg);
+    margin-top: -10%;
   }
   50% {
     transform: rotate(3deg);
+    margin-top: -7%;
   }
   75% {
-    transform: rotate(-2deg);
+    transform: rotate(-1deg);
+    margin-top: -9%;
   }
   100% {
     transform: rotate(0deg);
-  }
-}
-@keyframes floating-logo {
-  25% {
-    top: 26%;
-  }
-  50% {
-    top: 30%;
-  }
-  75% {
-    top: 27%;
-  }
-  100% {
-    top: 30%;
+    margin-top: -10%;
   }
 }
 @keyframes shift-cloud {
@@ -726,6 +689,7 @@ ANIMATIONS
     transform: translateY(10vh);
   }
   100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }
@@ -803,29 +767,19 @@ ANIMATIONS
 @keyframes floating-rotate {
   0% {
     transform: rotate(0deg);
+    margin-top: -10%;
   }
   50% {
     transform: rotate(3deg);
+    margin-top: -7%;
   }
   75% {
-    transform: rotate(-2deg);
+    transform: rotate(-1deg);
+    margin-top: -9%;
   }
   100% {
     transform: rotate(0deg);
-  }
-}
-@keyframes floating-logo {
-  25% {
-    top: 26%;
-  }
-  50% {
-    top: 30%;
-  }
-  75% {
-    top: 27%;
-  }
-  100% {
-    top: 30%;
+    margin-top: -10%;
   }
 }
 @keyframes shift-cloud {
@@ -870,6 +824,7 @@ ANIMATIONS
     transform: translateY(10vh);
   }
   100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }
@@ -900,6 +855,11 @@ ANIMATIONS
   padding-bottom: 56%;
   height: 0;
 }
+.banner > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .banner video {
   position: absolute;
   top: 0;
@@ -924,11 +884,12 @@ ANIMATIONS
 #banner__title {
   margin-top: -10%;
   width: 50%;
-  position: absolute;
-  top: 30%;
-  left: 25%;
-  /* ANIMATION LOGO */
-  animation: logo 1500ms, floating-logo 3500ms ease-in-out 1500ms infinite, floating-rotate 3500ms ease-in-out 1500ms infinite;
+  position: fixed;
+  top: 35%;
+  z-index: 99;
+}
+#banner__title.floating {
+  animation: logo 1500ms, floating-rotate 3500ms ease-in-out 1500ms infinite;
 }
 
 /****************************************************************************************************
@@ -965,20 +926,22 @@ ANIMATIONS
 #oscars.fast-rotation-flower.active::before,
 #oscars.fast-rotation-flower.active::after,
 #colophon.fast-rotation-flower.active::before,
-#colophon ul.fast-rotation-flower.active::after,
-#colophon.fast-rotation-flower.active::after {
-  animation-duration: calc(var(--scroll) * 5s);
+#colophon.fast-rotation-flower.active ul::after {
+  animation-duration: calc(var(--scroll) * 10s);
+  animation-iteration-count: infinite;
+  animation-play-state: running;
 }
 
 #oscars {
   position: relative;
-  margin-top: 10em;
+  padding-top: 10em;
+  overflow-x: hidden;
 }
 #oscars::before {
   content: url(/wp-content/themes/foce-child/assets/images/Sunflower.png);
   position: absolute;
   left: 9em;
-  top: -7em;
+  top: 4em;
 }
 #oscars::after {
   content: url(/wp-content/themes/foce-child/assets/images/orchid.png);
@@ -1029,7 +992,7 @@ ANIMATIONS
   }
   #oscars {
     position: relative;
-    margin-top: 5em;
+    padding-top: 5em;
   }
   #oscars div {
     flex-direction: column;
@@ -1047,7 +1010,7 @@ ANIMATIONS
 }
 @media screen and (max-width: 425px) {
   #oscars {
-    margin-top: 2em;
+    padding-top: 2em;
   }
   .oscars_div_text {
     font-size: 1rem;
@@ -1058,7 +1021,7 @@ ANIMATIONS
 }
 @media screen and (max-width: 375px) {
   #oscars {
-    margin-top: 0.5em;
+    padding-top: 0.5em;
   }
 }
 /****************************************************************************************************
@@ -1066,6 +1029,7 @@ ANIMATIONS
 ******************************************************************************************************/
 .story #characters {
   width: 100%;
+  overflow: hidden;
 }
 
 .story #characters div {
@@ -1101,6 +1065,20 @@ ANIMATIONS
   max-height: 400px;
 }
 
+@media screen and (max-width: 768px) {
+  .swiper-wrapper {
+    min-height: 300px;
+  }
+  .swiper-slide {
+    height: 300px;
+    width: 300px;
+    min-height: 300px;
+    min-width: 300px;
+  }
+  .swiper-slide img {
+    max-height: 300px;
+  }
+}
 /********************
 ANIMATIONS
 ********************/
@@ -1140,29 +1118,19 @@ ANIMATIONS
 @keyframes floating-rotate {
   0% {
     transform: rotate(0deg);
+    margin-top: -10%;
   }
   50% {
     transform: rotate(3deg);
+    margin-top: -7%;
   }
   75% {
-    transform: rotate(-2deg);
+    transform: rotate(-1deg);
+    margin-top: -9%;
   }
   100% {
     transform: rotate(0deg);
-  }
-}
-@keyframes floating-logo {
-  25% {
-    top: 26%;
-  }
-  50% {
-    top: 30%;
-  }
-  75% {
-    top: 27%;
-  }
-  100% {
-    top: 30%;
+    margin-top: -10%;
   }
 }
 @keyframes shift-cloud {
@@ -1207,6 +1175,7 @@ ANIMATIONS
     transform: translateY(10vh);
   }
   100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }
@@ -1260,14 +1229,14 @@ ANIMATIONS
   top: 375px;
   left: 88px;
 }
-.story h2.story__title {
+.story h2.story__div__title {
   background: none;
   transform: translateY(50%);
 }
-.story h2.story__title::before, .story h2.story__title::after {
+.story h2.story__div__title::before, .story h2.story__div__title::after {
   content: " ";
 }
-.story h2.story__title.active {
+.story h2.story__div__title.active {
   animation: appear-title 1s both;
 }
 
@@ -1289,7 +1258,7 @@ ANIMATIONS
   }
 }
 @media (max-width: 768px) {
-  h2.story__title {
+  h2.story__div__title {
     font-size: 3rem;
     padding: 2em;
   }
@@ -1333,29 +1302,19 @@ ANIMATIONS
 @keyframes floating-rotate {
   0% {
     transform: rotate(0deg);
+    margin-top: -10%;
   }
   50% {
     transform: rotate(3deg);
+    margin-top: -7%;
   }
   75% {
-    transform: rotate(-2deg);
+    transform: rotate(-1deg);
+    margin-top: -9%;
   }
   100% {
     transform: rotate(0deg);
-  }
-}
-@keyframes floating-logo {
-  25% {
-    top: 26%;
-  }
-  50% {
-    top: 30%;
-  }
-  75% {
-    top: 27%;
-  }
-  100% {
-    top: 30%;
+    margin-top: -10%;
   }
 }
 @keyframes shift-cloud {
@@ -1400,6 +1359,7 @@ ANIMATIONS
     transform: translateY(10vh);
   }
   100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }
@@ -1424,6 +1384,7 @@ ANIMATIONS
 #studio {
   position: relative;
   margin-top: 3em;
+  overflow-x: hidden;
   /* CONTENEUR TITRE */
   /* CONTENEUR TEXTE */
 }
@@ -1527,6 +1488,11 @@ ANIMATIONS
     animation-duration: 400ms;
   }
 }
+@media (max-width: 325px) {
+  #studio > .studio__div div .studio__div__title {
+    font-size: 2rem;
+  }
+}
 /********************
 ANIMATIONS
 ********************/
@@ -1566,29 +1532,19 @@ ANIMATIONS
 @keyframes floating-rotate {
   0% {
     transform: rotate(0deg);
+    margin-top: -10%;
   }
   50% {
     transform: rotate(3deg);
+    margin-top: -7%;
   }
   75% {
-    transform: rotate(-2deg);
+    transform: rotate(-1deg);
+    margin-top: -9%;
   }
   100% {
     transform: rotate(0deg);
-  }
-}
-@keyframes floating-logo {
-  25% {
-    top: 26%;
-  }
-  50% {
-    top: 30%;
-  }
-  75% {
-    top: 27%;
-  }
-  100% {
-    top: 30%;
+    margin-top: -10%;
   }
 }
 @keyframes shift-cloud {
@@ -1633,6 +1589,7 @@ ANIMATIONS
     transform: translateY(10vh);
   }
   100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }
@@ -1655,10 +1612,10 @@ ANIMATIONS
   }
 }
 .story #place {
+  overflow: hidden;
   background-image: url(./assets/images/Background_place.png);
   position: relative;
   /* DIV TEXTE sf div bg */
-  /* TITRE "LIEU" */
   /* NUAGES */
   /* PETIT NUAGE */
   /* GROS NUAGE */
@@ -1667,10 +1624,29 @@ ANIMATIONS
   position: absolute;
   top: 13em;
   left: 2em;
+  /* FOND orange TITRE */
 }
-.story #place h3 {
+.story #place > div .place_div {
+  background-image: url(./assets/images/orange_place_bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 160px;
+  z-index: 99;
+}
+.story #place > div .place_div div {
+  overflow: hidden;
+  height: 62%;
+  /* TITRE "LIEU" */
+}
+.story #place > div .place_div div .place_div_title {
+  background: none;
   margin-bottom: 15px;
   z-index: 2;
+  transform: translateY(50%);
+}
+.story #place > div .place_div div .place_div_title.active {
+  animation: appear-title 1s both;
 }
 .story #place .place_cloud {
   background-position: center;
@@ -1703,17 +1679,101 @@ ANIMATIONS
   left: 66em;
 }
 
+/***********************************************************************************************
+                                    BREAKPOINTS
+***********************************************************************************************/
+@media (max-width: 1192px) {
+  .story #place div .place_div {
+    height: 135px;
+  }
+  .story #place div .place_div div {
+    overflow: hidden;
+    height: 62%;
+    /* TITRE "LIEU" */
+  }
+}
 @media (max-width: 920px) {
   .story #place div .place_cloud {
     background: none;
   }
 }
 @media (max-width: 425px) {
-  .story #place h3 {
-    padding-left: 1em;
-  }
   .story #place > div p {
     padding-left: 2em;
+  }
+}
+@media (max-width: 332px) {
+  .story #place div .place_div {
+    height: 107px;
+  }
+  .story #place h3 {
+    font-size: 2rem;
+  }
+}
+.story #characters .characters_div {
+  background-image: url(./assets/images/orange_characters_bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  margin-left: 80px;
+  height: 185px;
+  z-index: 99;
+}
+.story #characters .characters_div > div {
+  overflow: hidden;
+  height: 65%;
+  /* TITRE "LIEU" */
+}
+.story #characters .characters_div > div h3.characters_div_title {
+  background: none;
+  margin-bottom: 15px;
+  text-align: left;
+  padding: 1.5em 2em;
+  z-index: 2;
+  transform: translateY(50%);
+}
+.story #characters .characters_div > div h3.characters_div_title.active {
+  animation: appear-title 1s both;
+}
+
+/***********************************************************************************************
+                                    BREAKPOINTS
+***********************************************************************************************/
+@media (max-width: 1192px) {
+  .story #characters .characters_div {
+    height: 160px;
+    /* TITRE "LIEU" */
+  }
+  .story #characters .characters_div div h3.characters_div_title {
+    padding: 1.5em 2.5em;
+  }
+}
+@media (max-width: 992px) {
+  .story #characters .characters_div {
+    background-position: center;
+    margin-left: 0;
+    /* TITRE "LIEU" */
+  }
+  .story #characters .characters_div div h3.characters_div_title {
+    text-align: center;
+  }
+}
+@media (max-width: 425px) {
+  .story #characters .characters_div {
+    height: 130px;
+    /* TITRE "LIEU" */
+  }
+  .story #characters .characters_div div h3.characters_div_title {
+    font-size: 1.9rem;
+  }
+}
+@media (max-width: 350px) {
+  .story #characters .characters_div {
+    height: 95px;
+    /* TITRE "LIEU" */
+  }
+  .story #characters .characters_div div h3.characters_div_title {
+    font-size: 1.5rem;
   }
 }
 

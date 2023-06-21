@@ -8,6 +8,11 @@
     position: relative;
     padding-bottom: 56%;
     height: 0;
+    & > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     video {
         position: absolute;
@@ -32,19 +37,18 @@
     &__img-mobile {
         display: none;
     }
-
 }
 
 #banner__title {
     margin-top: -10%;
     width: 50%;
-    position: absolute;
-    top: 30%;
-    left: 25%;
-    /* ANIMATION LOGO */
-    animation: logo 1500ms,
-        floating-logo 3500ms ease-in-out 1500ms infinite,
-        floating-rotate 3500ms ease-in-out 1500ms infinite;
+    position: fixed;
+    top: 35%;
+    z-index: 99;
+    
+    &.floating{
+        animation: logo 1500ms, floating-rotate 3500ms ease-in-out 1500ms infinite;
+    }
 }
 
 /****************************************************************************************************

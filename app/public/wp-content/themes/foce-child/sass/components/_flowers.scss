@@ -21,7 +21,10 @@
 #oscars.fast-rotation-flower.active::before, 
 #oscars.fast-rotation-flower.active::after,
 #colophon.fast-rotation-flower.active::before,
-#colophon ul.fast-rotation-flower.active::after,
-#colophon.fast-rotation-flower.active::after {
-  animation-duration: calc(var(--scroll) * 5s);
+#colophon.fast-rotation-flower.active ul::after
+//#colophon.fast-rotation-flower.active::after 
+{
+  animation-duration: calc(var(--scroll) * 10s);
+  animation-iteration-count: infinite;
+  animation-play-state:running;
 }

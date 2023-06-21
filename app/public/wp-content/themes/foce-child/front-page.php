@@ -4,18 +4,22 @@ get_header();
 ?>
     <main id="primary" class="site-main">
         <section class="banner">
-            <video class="bannner__video" preload autoplay loop muted poster="<?php echo get_template_directory_uri() . '/assets/images/banner.png'; ?>">
-                <source src="<?php echo get_template_directory_uri() . '/assets/images/Studio+Koukaki-vidéo+header+sans+son+(1).mp4'; ?>" type=video/mp4>
-                <source src="<?php echo get_template_directory_uri() . '/assets/images/Studio+Koukaki-vidéo+header+sans+son+(1).mp4'; ?>" type="video/webm">
-            </video>
+            <div>
+                <video class="banner__video" preload autoplay loop muted poster="<?php echo get_template_directory_uri() . '/assets/images/banner.png'; ?>">
+                    <source src="<?php echo get_template_directory_uri() . '/assets/images/Studio+Koukaki-vidéo+header+sans+son+(1).mp4'; ?>" type=video/mp4>
+                    <source src="<?php echo get_template_directory_uri() . '/assets/images/Studio+Koukaki-vidéo+header+sans+son+(1).mp4'; ?>" type="video/webm">
+                </video>
 
-            <img class="banner__img-mobile" src="<?php echo get_template_directory_uri() . '/assets/images/banner.png'; ?> " alt="bannière Fleurs d'oranger & chats errants">
-            <img id="banner__title" class="banner__title" src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
+                <img class="banner__img-mobile" src="<?php echo get_template_directory_uri() . '/assets/images/banner.png'; ?> " alt="bannière Fleurs d'oranger & chats errants">
+                <img data-parallax="1.2" id="banner__title" class="banner__title floating" src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?> " alt="logo Fleurs d'oranger & chats errants">
+            
+            </div>
+            
         </section>
         <section id="story" class="story">
             <div class="story__div fast-rotation-flower">
                 <div> 
-                    <h2 class="story__title">L'histoire</h2>
+                    <h2 class="story__div__title">L'histoire</h2>
                 </div>
             </div>
              
@@ -29,7 +33,12 @@ get_header();
 
             <article id="place" class="place">
                 <div>
-                    <h3 class="place_title">Le Lieu</h3>
+                    <div class="place_div">
+                        <div> 
+                            <h3 class="place_div_title">Le lieu</h3>
+                        </div>
+                    </div>
+                    
                     <p class="place_paragraphe"><?php echo get_theme_mod('place'); ?></p>
                     <div class="place_cloud place_little-cloud"></div>
                     <div class="place_cloud place_big-cloud"></div>

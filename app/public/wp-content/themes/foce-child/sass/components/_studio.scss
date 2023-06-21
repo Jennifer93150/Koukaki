@@ -3,6 +3,7 @@
 #studio {
     position: relative;
     margin-top: 3em;
+    overflow-x: hidden;
 
     &>div::before {
         content: "";
@@ -124,5 +125,11 @@
     #studio>.studio__div div .studio__div__title-first.active,
     #studio>.studio__div div .studio__div__title-second.active {
         animation-duration: 400ms;
+    }
+}
+
+@media (max-width: 325px) {
+    #studio>.studio__div div .studio__div__title {
+        font-size: 2rem;
     }
 }

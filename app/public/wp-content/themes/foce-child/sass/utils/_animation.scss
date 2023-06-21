@@ -47,37 +47,22 @@ ANIMATIONS
 @keyframes floating-rotate {
     0% {
         transform: rotate(0deg);
+        margin-top: -10%;
     }
 
     50% {
         transform: rotate(3deg);
+        margin-top: -7%;
     }
 
     75% {
-        transform: rotate(-2deg);
+        transform: rotate(-1deg);
+        margin-top: -9%;
     }
 
     100% {
         transform: rotate(0deg);
-    }
-}
-
-@keyframes floating-logo {
-   
-    25% {
-        top: 26%;
-    }
-
-    50% {
-        top: 30%;
-    }
-
-    75% {
-        top: 27%;
-    }
-
-    100% {
-        top: 30%;
+        margin-top: -10%;
     }
 }
 
@@ -130,6 +115,7 @@ ANIMATIONS
         transform: translateY(10vh);
     }
     100%{
+        opacity: 1;
         transform: translateY(0);
     }
 }

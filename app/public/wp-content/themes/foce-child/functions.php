@@ -11,6 +11,7 @@ function theme_enqueue_styles() {
     wp_enqueue_script( 'swiperjs-script', 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js', array(), _S_VERSION, true );
     wp_enqueue_script( 'slider-swiper-script', get_stylesheet_directory_uri() . '/js/slider-swiper.js', array(), null, true );
     
+    wp_enqueue_script( 'parallax-script', get_stylesheet_directory_uri() . '/js/parallax.js');
 }
 
 // Get customizer options form parent theme
