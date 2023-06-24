@@ -55,7 +55,7 @@ ANIMATIONS
 }
 @keyframes shift-cloud {
   to {
-    transform: translateX(-500px);
+    transform: translateX(-300px);
   }
 }
 @keyframes rotation-flower {
@@ -216,7 +216,7 @@ ANIMATIONS
 }
 @keyframes shift-cloud {
   to {
-    transform: translateX(-500px);
+    transform: translateX(-300px);
   }
 }
 @keyframes rotation-flower {
@@ -334,7 +334,7 @@ ANIMATIONS
 }
 @keyframes shift-cloud {
   to {
-    transform: translateX(-500px);
+    transform: translateX(-300px);
   }
 }
 @keyframes rotation-flower {
@@ -649,7 +649,7 @@ ANIMATIONS
 }
 @keyframes shift-cloud {
   to {
-    transform: translateX(-500px);
+    transform: translateX(-300px);
   }
 }
 @keyframes rotation-flower {
@@ -784,7 +784,7 @@ ANIMATIONS
 }
 @keyframes shift-cloud {
   to {
-    transform: translateX(-500px);
+    transform: translateX(-300px);
   }
 }
 @keyframes rotation-flower {
@@ -884,9 +884,12 @@ ANIMATIONS
 #banner__title {
   margin-top: -10%;
   width: 50%;
-  position: fixed;
+  position: absolute;
   top: 35%;
   z-index: 99;
+}
+#banner__title.fixed {
+  position: fixed;
 }
 #banner__title.floating {
   animation: logo 1500ms, floating-rotate 3500ms ease-in-out 1500ms infinite;
@@ -1135,7 +1138,7 @@ ANIMATIONS
 }
 @keyframes shift-cloud {
   to {
-    transform: translateX(-500px);
+    transform: translateX(-300px);
   }
 }
 @keyframes rotation-flower {
@@ -1319,7 +1322,7 @@ ANIMATIONS
 }
 @keyframes shift-cloud {
   to {
-    transform: translateX(-500px);
+    transform: translateX(-300px);
   }
 }
 @keyframes rotation-flower {
@@ -1549,7 +1552,7 @@ ANIMATIONS
 }
 @keyframes shift-cloud {
   to {
-    transform: translateX(-500px);
+    transform: translateX(-300px);
   }
 }
 @keyframes rotation-flower {

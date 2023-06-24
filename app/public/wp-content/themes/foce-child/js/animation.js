@@ -28,7 +28,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
         /* pr deplacement nuages en mm tps que le scroll */
         document.body.style.setProperty(
           "--scroll",
-          window.pageYOffset / window.innerHeight
+          window.scrollY / window.innerHeight
         );
         
         // TITRE HISTOIRE
@@ -46,7 +46,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
         // FLEURS
         flowers.forEach(element => {
           addClassActive(element);
-          //element.classList.add('active');
         });
         
     },

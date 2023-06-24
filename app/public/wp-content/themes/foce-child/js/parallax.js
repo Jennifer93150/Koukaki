@@ -31,6 +31,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     
     onScroll() {
       this.element.classList.remove('floating');
+      this.element.classList.add('fixed');
       const story = document.querySelector('#story');
       //Valeur du haut de page (avec scroll) jusqu'au haut section histoire
       const storyTop = offsetTop(story) - window.scrollY;

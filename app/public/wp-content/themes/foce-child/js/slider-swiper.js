@@ -7,9 +7,8 @@
       spaceBetween: 30,
       loop: true,
       loopedSlides: 2,
-      initialSlide: 1,
       coverflowEffect: {
-        rotate: 0,
+        rotate: 65,
         stretch: 0,
         depth: 10,
         modifier: 1,
