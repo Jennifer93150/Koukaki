@@ -48,6 +48,7 @@
     z-index: 99;
     &.fixed{
         position: fixed;
+        top: 50%;
     }
     &.floating{
         animation: logo 1500ms, floating-rotate 3500ms ease-in-out 1500ms infinite;

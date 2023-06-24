@@ -890,6 +890,7 @@ ANIMATIONS
 }
 #banner__title.fixed {
   position: fixed;
+  top: 50%;
 }
 #banner__title.floating {
   animation: logo 1500ms, floating-rotate 3500ms ease-in-out 1500ms infinite;
